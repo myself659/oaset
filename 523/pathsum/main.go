@@ -85,6 +85,7 @@ func pathsum(grid [][]int) int {
 				}
 				cnt++
 			}
+			// 支持加跳的话，增加新的方向即可，即对应增加y+1, y+2的方向
 			if cnt > 0 {
 				visited[y][x] = true
 				dp[y][x] = tempsum
